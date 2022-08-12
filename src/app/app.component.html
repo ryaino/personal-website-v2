@@ -15,23 +15,28 @@
       <div class="hidden sm:flex items-center justify-between w-max">
         <ul class="menu menu-horizontal">
           <!-- Navbar menu content here -->
-          <li><label routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a>Home</a></label></li>
-          <li><label  routerLink="work-history" routerLinkActive="active"><a>Work History</a></label></li>
+          <li><label routerLink="" routerLinkActive="active"
+                     [routerLinkActiveOptions]="{exact: true}"><a>Home</a></label></li>
+          <li><label routerLink="work-history" routerLinkActive="active"><a>Work History</a></label></li>
           <li><label routerLink="personal-projects" routerLinkActive="active"><a>Personal Projects</a></label></li>
           <li><label routerLink="about-me" routerLinkActive="active"><a>About Me</a></label></li>
         </ul>
       </div>
     </div>
     <!-- Page content here -->
-    <router-outlet></router-outlet>
+    <app-main-content-wrapper>
+      <router-outlet></router-outlet>
+    </app-main-content-wrapper>
   </div>
   <div class="drawer-side">
     <label for="my-drawer-3" class="drawer-overlay"></label>
     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
       <!-- Sidebar content here -->
-      <li><label for="my-drawer-3" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a>Home</a></label></li>
+      <li><label for="my-drawer-3" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a>Home</a></label>
+      </li>
       <li><label for="my-drawer-3" routerLink="work-history" routerLinkActive="active"><a>Work History</a></label></li>
-      <li><label for="my-drawer-3" routerLink="personal-projects" routerLinkActive="active"><a>Personal Projects</a></label></li>
+      <li><label for="my-drawer-3" routerLink="personal-projects" routerLinkActive="active"><a>Personal
+        Projects</a></label></li>
       <li><label for="my-drawer-3" routerLink="about-me" routerLinkActive="active"><a>About Me</a></label></li>
 
     </ul>
