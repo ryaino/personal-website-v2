@@ -1,1 +1,193 @@
-<p>work-history works!</p>
+<app-main-content-wrapper>
+  <h1> Work History</h1>
+
+  <!--  aotal -->
+  <app-job-details
+    class="w-full"
+    companyName="Aotal"
+    jobTitle="Intermediate Software Engineer"
+    duration="August 2022 - Present"
+    location="Fully Remote"
+    imagePath="aotal-logo.png"
+    [technologiesKeys]="aotal_technologies_keys"
+  >
+    <p responsibilities>
+      I am still quite new to this role, so I will fill this in at a later date
+    </p>
+
+    <p moreInfo>
+      I am still quite new to this role, so I will fill this in at a later date
+    </p>
+  </app-job-details>
+
+  <!--  BINDERPOS -->
+  <app-job-details
+    class="w-full"
+    companyName="BinderPOS"
+    jobTitle="Intermediate Backend Developer "
+    duration="January 2022 - August 2022"
+    location="Fully Remote"
+    imagePath="binderpos.png"
+    [technologiesKeys]="binderpos_technologies_keys"
+  >
+    <p responsibilities>
+      Majority of my time was spent doing backend development for the
+      <a class="text-primary" href="https://channelfireball.com/magic_the_gathering">Channel Fireball Marketplace</a>,
+      an e-commerce site for trading cards.
+      <br>
+      <br>
+      Both big feature development and bug fixing within a range of microservices were included. I also had the
+      occasional
+      opportunity to work on the frontend side of whatever backend task I was working on.
+      <br>
+      <br>
+      There was a big emphasis on self management and keeping ownership of my work. When working on a ticket, I had to
+      make sure to keep track of it all the way to production, even when handing it off to QA. To help make this easier,
+      there was a certain level of trust where I had the ability to merge changes into both dev and staging environments
+      on my own.
+      <br>
+      <br>
+      Everyone on the team worked fully remote across New Zealand and Brazil. Daily stand-ups occurred, where we would
+      keep
+      each other updated on work while also getting the opportunity to get to know one another better. To help share
+      knowledge within the team we would have semi regular sessions hosted by one of us, where we would talk about an
+      aspect of the product that not everyone else knew about. I had the privilege of hosting one of these myself, where
+      the reception among the team was fantastic.
+    </p>
+
+    <div moreInfo>
+      <div>
+        Shortly before I left BinderPOS, we were acquired by our largest competitor;
+        <a class="text-primary" href="https://www.tcgplayer.com/">TCG Player</a>. Upon the news of the acquisition, it
+        was
+        announced that they would be killing off the the Channel Fireball Marketplace we had all worked so hard on. So
+        if
+        the link no longer works, this is why.
+        <br>
+        <br>
+        Up until my departure I would say that my time at BinderPOS was almost that of a dream job for me. Working on
+        such
+        a fresh product gave me the opportunity learn about so many great modern technologies that I've now fallen in
+        love
+        with.
+        Hasura, and by extension GraphQL, was such a cool and enjoyable technology to me, that I've spent a lot of of my
+        free
+        time learning more about it and trying to incorporate it into my own projects. I feel like my skills as a
+        developer,
+        as well as my enthusiasm for development, skyrocketed exponentially from my time at BinderPOS.
+        <br>
+        <br>
+        Being a collector myself and someone who is into card games, it was really great working on a product within an
+        industry that I've been a lifelong community member of. With the marketplace being a public piece of software,
+        there
+        was also a great deal of satisfaction whenever I would contribute to a feature and be able to directly share my
+        work
+        with friends and family.
+      </div>
+      <div class="italic">
+        <h3 class="text-center">Quotes from BinderPOS team members</h3>
+        <p>
+          <q class="italic">
+            I really appreciated all the interesting ideas you had and your knowledge of MtG helped us so much.
+          </q>
+        </p>
+        <p>
+          <q class="italic">
+            Thanks for all the help setting up my dev environment, I would have been totally lost for a few weeks without you.
+          </q>
+        </p>
+        <p>
+          <q class="italic">
+            It was nice to see your evolution over the short period we worked together. You joined a complex environment
+            with lots of technical challenges and new tools to learn and very quickly was able to push code to production
+          </q>
+        </p>
+        <p>
+          <q>
+            What a pleasure working with you mate. You are a great teammate and your willingness to learn and teach is
+            inspiring. I'm sure you will achieve great things in your career and your new company is lucky to have you onboard.
+          </q>
+        </p>
+        <p>
+          <q>
+            I really admired your enthusiasm and proactiveness.
+          </q>
+        </p>
+      </div>
+    </div>
+
+  </app-job-details>
+
+  <!--  FIS -->
+  <app-job-details
+    class="w-full"
+    companyName="Fidelity Information Services (FIS)"
+    jobTitle="Junior Software Engineer"
+    duration="March 2019 - December 2021"
+    location="Wellington / Fully Remote"
+    imagePath="FIS.png"
+    [technologiesKeys]="fis_technologies_keys"
+  >
+
+    <p responsibilities>
+      FIS was my first development job after graduating from university. I was tasked with maintaining and updating
+      various financial applications for a variety of Australian banks.
+      <br>
+      <br>
+      I was part of a very small team working on multiple Java web apps. This project and team structure resulted in
+      everyone
+      essentially having equal responsibility for all aspects. Because of this I was able to get a lot of exposure and
+      experience to a lot of other aspects of development rather than just backend coding; such as devops and
+      deployment. I even had to interact with and IBM mainframe from time to time.
+      <br>
+      <br>
+      Throughout my time at FIS, aside from day to day bug fixing, there were two main projects I was a part of. I spent
+      a lot of time upgrading some of our applications from the Struts framework over to Spring. Not everything was
+      updated
+      during this move however, and I would still be stuck dealing with Java Server Pages as the frontend. Once that was
+      complete,
+      I was then appointed to lead our efforts in resolving the hundreds of the vulnerabilities found throughout our
+      applications.
+    </p>
+
+    <div moreInfo>
+      <p>
+        I was hired by FIS during a time where multiple members of the dev team had left within a short period,
+        and the higher-ups were more concerned with finding cheap replacements than suitable ones. In the beginning
+        this resulted in our dev team being only four people and no manager. Of those four, three of us worked out of
+        our Wellington office - two graduates and a senior.
+      </p>
+
+      <p>
+        With the situation being what it was, our senior dev didn't have the time or capacity to get us new grads up to
+        speed, so we had to rely on each other to understand the code bases we were thrown into.
+      </p>
+
+      <p>
+        Six months in we got the news that the lease for our office was not going to be renewed and that we would move
+        to working from home. Keep in mind that this was before Covid had made its appearance anywhere. As a result of
+        this news the other graduate dev, who started at the same time as me, resigned, leaving me to figure things out
+        on my own.
+      </p>
+
+      <p>
+        It's safe to say that the entire experience was the opposite of great. I found myself not enjoying development
+        and struggled to find motivation to pursue personal projects in my free time. Seeing as this was my only industry
+        experience at the time, I was under the impression that Java was a dying language only used for legacy systems
+        and that the rest of my career was going to be working on these systems.
+      </p>
+
+      <p>
+        After leaving FIS and gaining some more experience working in a more modern environment I'm able to look back with
+        a much better understanding of what exactly was causing so many issues for me back then. I think the biggest thing
+        was that I was working on 15+ year old software that wasn't modernized enough. A lot of the things I had learned
+        at university and been learning in my free time, such as separation of frontend and backend, frontend Javascript
+        frameworks and API design, just weren't applicable to most of the work I was doing. So I had all this knowledge
+        I had spent time gathering that I couldn't apply to my job, meanwhile I was learning all of these things from my
+        job that weren't applicable in a modern environment.
+      </p>
+    </div>
+
+
+  </app-job-details>
+</app-main-content-wrapper>

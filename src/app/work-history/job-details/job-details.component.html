@@ -1,0 +1,62 @@
+<div class="bg-base-100 rounded mb-8  grid grid-cols-1 gap-2 justify-center w-full p-2 md:grid-cols-2 ">
+  <div class="w-full grid justify-items-center items-center grid-cols-1">
+    <div class="grid justify-items-center items-center">
+      <img class="w-48 justify-self-center m-0" src="assets/{{imagePath}}">
+      <h2 class="text-center mt-0">{{companyName}}</h2>
+
+      <span>
+        {{jobTitle}}
+      </span>
+      <span>
+        {{duration}}
+      </span>
+      <span>
+        {{location}}
+      </span>
+    </div>
+  </div>
+  <div>
+
+
+    <!--      Technologies and tools-->
+    <div class="collapse collapse-arrow  border rounded border-base-300 h-fit">
+      <input type="checkbox"/>
+      <div class="collapse-title text-xl font-medium">
+        Technologies / Tools
+      </div>
+      <div class="collapse-content">
+        <div class="divider"></div>
+        <div class="grid grid-flow-row items-center auto-cols-fr grid-cols-2 gap-y-3 sm:grid-cols-3">
+          <div class="grid" *ngFor="let technology of technologiesValues ">
+            <img class="w-24 m-0 justify-self-center" src="assets/{{technology.image}}">
+            <h3 class="m-0 text-center">
+              {{technology.title}}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- KEY RESPONSIBILITIES -->
+    <div class="collapse collapse-arrow  border rounded border-base-300">
+      <input type="checkbox"/>
+      <div class="collapse-title text-xl font-medium">
+        Key Responsibilities
+      </div>
+      <div class="collapse-content">
+        <div class="divider"></div>
+        <ng-content select="[responsibilities]"></ng-content>
+      </div>
+    </div>
+    <!-- MORE INFO -->
+    <div class="collapse collapse-arrow border rounded border-base-300">
+      <input type="checkbox"/>
+      <div class="collapse-title text-xl font-medium">
+        More Info / Reflection
+      </div>
+      <div class="collapse-content">
+        <div class="divider"></div>
+        <ng-content select="[moreInfo]"></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

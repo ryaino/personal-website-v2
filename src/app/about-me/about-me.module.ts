@@ -1,17 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AboutMeRoutingModule } from './about-me-routing.module';
-import { AboutMeComponent } from './about-me.component';
+import {AboutMeRoutingModule} from './about-me-routing.module';
+import {AboutMeComponent} from './about-me.component';
+import {MainContentWrapperModule} from "../shared/main-content-wrapper/main-content-wrapper.module";
 
 
 @NgModule({
   declarations: [
     AboutMeComponent
   ],
-  imports: [
-    CommonModule,
-    AboutMeRoutingModule
-  ]
-})
+              imports: [
+                  CommonModule,
+                  AboutMeRoutingModule,
+                  MainContentWrapperModule
+              ]
+          })
 export class AboutMeModule { }

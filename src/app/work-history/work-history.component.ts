@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-work-history',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkHistoryComponent implements OnInit {
 
-  constructor() { }
+  public aotal_technologies_keys: string[] = ['spring', 'jira', 'docker', 'aws'];
+  public binderpos_technologies_keys: string[] = ['spring', 'jira', 'docker', 'gcp','postgres', 'hasura', 'graphql', 'kubernetes', 'react', 'wsl', 'microservices', 'gitlab'];
+  public fis_technologies_keys: string[] = ['spring','jsp', 'ibm', 'jira', 'veracode', 'jenkins', 'docker', 'wsl', 'gitlab'];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+
+    document.body.scrollTop = 0;
   }
 
 }
