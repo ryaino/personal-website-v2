@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class WorkHistoryComponent implements OnInit {
 
   public aotal_technologies_keys: string[] = ['spring', 'jira', 'docker', 'aws'];
-  public binderpos_technologies_keys: string[] = ['spring', 'jira', 'docker', 'gcp','postgres', 'hasura', 'graphql', 'kubernetes', 'react', 'wsl', 'microservices', 'gitlab'];
+  public binderpos_technologies_keys: string[] = ['spring','kafka', 'jira', 'docker', 'gcp','postgres', 'hasura', 'graphql', 'kubernetes', 'react', 'wsl', 'microservices', 'gitlab'];
   public fis_technologies_keys: string[] = ['spring','jsp', 'ibm', 'jira', 'veracode', 'jenkins', 'docker', 'wsl', 'gitlab'];
 
   constructor() {

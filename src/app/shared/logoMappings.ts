@@ -115,4 +115,9 @@ export const logo_mappings = [{
     key:"tailwind",
     title:"Tailwind CSS",
     image:"logo_tailwind.png"
+  },
+  {
+    key:"kafka",
+    title:"Kafka",
+    image:"logo_kafka.png"
   }]
