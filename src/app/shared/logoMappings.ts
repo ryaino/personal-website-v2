@@ -120,4 +120,10 @@ export const logo_mappings = [{
     key:"kafka",
     title:"Kafka",
     image:"logo_kafka.png"
-  }]
+  },
+  {
+    key: "dotnet",
+    title: ".NET Core",
+    image:"logo_dotnet.png"
+  }
+]
